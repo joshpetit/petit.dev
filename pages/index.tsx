@@ -31,7 +31,7 @@ export default function Home() {
       </Head>
       <Toaster />
       <main className="h-full w-11/12 items-center justify-center space-x-8 pt-10 text-xl text-white lg:flex lg:justify-evenly lg:space-x-0">
-        <article className="flex flex-col justify-center space-y-9 text-center md:text-3xl lg:h-5/6 lg:w-2/6 lg:text-4xl">
+        <article className="flex flex-col justify-center space-y-3 text-center md:text-3xl lg:h-5/6 lg:w-2/6 lg:text-4xl">
           <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">
             Joshua Petitma
           </h1>
