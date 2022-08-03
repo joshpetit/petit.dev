@@ -9,27 +9,32 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons"; //
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import toast, { Toaster } from "react-hot-toast";
 
-  const copyEmailAddress = () => {
-    navigator.clipboard.writeText("joshua@petit.dev");
-    toast.success("Copied Email to Clipboard", {
-      iconTheme: {
-        primary: "#7F87BD",
-        secondary: "#FFFFFF",
-      },
-    });
-  };
+const copyEmailAddress = () => {
+  navigator.clipboard.writeText("joshua@petit.dev");
+  toast.success("Copied Email to Clipboard", {
+    iconTheme: {
+      primary: "#7F87BD",
+      secondary: "#FFFFFF",
+    },
+  });
+};
 export default function Home() {
   return (
-    <div className="flex h-screen overflow-auto items-center justify-center bg-petit-grey">
+    <div className="flex h-screen items-center justify-center overflow-auto bg-petit-grey">
       <Head>
         <title>Joshua Petitma</title>
-        <meta name="description" content="Joshua Petitma - Software Developer" />
+        <meta
+          name="description"
+          content="Joshua Petitma - Software Developer"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Toaster />
       <main className="h-full w-11/12 items-center justify-center space-x-8 pt-10 text-xl text-white lg:flex lg:justify-evenly lg:space-x-0">
-        <article className="flex flex-col justify-center space-y-4 text-center lg:h-5/6 lg:w-2/6  lg:text-3xl">
-          <h1 className="text-3xl font-bold lg:text-5xl">Joshua Petitma</h1>
+        <article className="flex flex-col justify-center space-y-9 text-center md:text-3xl lg:h-5/6 lg:w-2/6 lg:text-4xl">
+          <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">
+            Joshua Petitma
+          </h1>
           <p>
             I develop software, primarily websites and mobile apps. You can view
             some of the projects and companies I’ve worked with throughout the
@@ -56,7 +61,7 @@ export default function Home() {
           <div className="h-full  w-5/6 rounded-3xl bg-petit-purple">
             <img
               src="/photo.jpg"
-              className="relative bottom-3 right-3 h-64 w-full rounded-[inherit] object-cover object-center drop-shadow-2xl  lg:h-full"
+              className="relative bottom-3 right-3 h-64 w-full rounded-[inherit] object-cover object-center drop-shadow-2xl sm:h-96  lg:h-full"
             />
           </div>
           <Socials />
@@ -70,7 +75,7 @@ export default function Home() {
 
 function Socials() {
   return (
-    <div className="flex w-full flex-row justify-evenly rounded-2xl bg-petit-purple p-3 text-4xl lg:p-7 lg:text-6xl">
+    <div className="flex w-full flex-row justify-evenly rounded-2xl bg-petit-purple p-3 text-4xl sm:w-4/5 lg:p-7 lg:text-6xl">
       <PetitIcon
         target="_blank"
         href="https://www.youtube.com/channel/UClo6j1DhtvHIKBPcsmCgWlg"
